@@ -4,12 +4,14 @@ import { StyleSheet, View } from 'react-native';
 type BarProps = {
   barStyle?: object;
   barContainerStyle?: object;
+  header?:React.ReactElement<any,any>
 };
 
 export const Bar = ({ barStyle, barContainerStyle }: BarProps) => {
   return (
     <View style={[BarStyles.barContainer, barContainerStyle]}>
       <View style={[BarStyles.bar, barStyle]} />
+       {header && header}
     </View>
   );
 };
