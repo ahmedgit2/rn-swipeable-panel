@@ -213,6 +213,7 @@ class SwipeablePanel extends Component<SwipeablePanelProps, SwipeablePanelState>
       onClose,
       allowTouchOutside,
       closeOnTouchOutside,
+      header
     } = this.props;
 
     return showComponent ? (
