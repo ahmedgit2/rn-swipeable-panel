@@ -40,10 +40,10 @@ type SwipeablePanelProps = {
   smallPanelHeight?: number;
   noBar?: boolean;
   barStyle?: object;
-  barContainerStyle?: object,
+  barContainerStyle?: object;
   allowTouchOutside?: boolean;
   scrollViewProps?: ScrollViewProps;
-  header?:React.ReactElement<any,any>
+  header?:React.ReactElement<any,any>;
 };
 
 type MaybeAnimated<T> = T | Animated.Value;
