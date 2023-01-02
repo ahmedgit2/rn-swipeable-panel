@@ -95,6 +95,8 @@ declare interface SwipeablePanelProps extends React.Props<SwipeablePanel> {
    * Required prop to keep panel's state sync with your parent components'state. Will be fired when panel is closed. See the example project.
    */
   onClose: () => void;
+  
+ header?:React.ReactElement<any,any>;
 }
 
 declare class SwipeablePanel extends React.Component<SwipeablePanelProps, any> {}
