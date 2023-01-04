@@ -186,7 +186,7 @@ class SwipeablePanel extends Component<SwipeablePanelProps, SwipeablePanelState>
 
     Animated.spring(this.state.pan, {
       toValue: { x: 0, y: newY },
-      tension: 22,
+      tension: 30,
       friction: 25,
       useNativeDriver: true,
       restDisplacementThreshold: 10,
